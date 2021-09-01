@@ -226,6 +226,55 @@ Azure Storage Services:
 16. Azure Data Lake Analytics is an on-demand analytics job service that simplifies big data. Instead of deploying, configuring, and tuning 	hardware, you write queries to transform your data and extract valuable insights.
 
 
+										Part 3 - Describe core solutions and management tools on Azure
+
+1. Azure IoT Hub is a managed service that's hosted in the cloud and that acts as a central message hub for bi-directional communication between your IoT application and the devices it manages.
+2. Azure IoT Central builds on top of IoT Hub by adding a dashboard that allows you to connect, monitor, and manage your IoT devices. 
+3. Azure Sphere creates an end-to-end, highly secure IoT solution for customers that encompasses everything from the hardware and operating system on the device to the secure method of sending messages from the device to the message hub.
+4. When security is a critical consideration in your product's design, the best product option is Azure Sphere, which provides a comprehensive end-to-end solution for IoT devices.
+5. Send telemetry information to a centralized location - Azure IoT Hub, Remote control, set up error notifications - Azure IoT Central.
+6. Azure Machine Learning is a platform for making predictions. It consists of tools and services that allow you to connect to data to train and test models to find one that will most accurately predict a future result.
+7. Azure Cognitive Services provides prebuilt machine learning models that enable applications to see, hear, speak, understand, and even begin to reason.
+8. Azure Bot Service and Bot Framework are platforms for creating virtual agents that understand and reply to questions just like a human.
+9. The Azure Cognitive Services Personalizer service watches your users' actions within an application.
+10. Azure Functions can perform orchestration tasks by using an extension called Durable Functions, which allow developers to chain functions together while maintaining state.
+11. Azure Functions is a serverless compute service, and Azure Logic Apps is intended to be a serverless orchestration service.
+12. Azure Functions pricing is based on the number of executions and the running time of each execution. Logic Apps pricing is based on the number of executions and the type of connectors that it utilizes.
+13. Azure DevTest Labs provides an automated means of managing the process of building, setting up, and tearing down virtual machines (VMs) that contain builds of your software projects.
+14. Monitor the health and status of your Azure resources.
+    Check for alerts, quickly diagnose and fix issues, and restart a web app or virtual machine (VM).
+    Run the Azure CLI or Azure PowerShell commands to manage your Azure resources.
+15. Azure PowerShell is available for Windows, Linux, and Mac, and you can access it in a web browser via Azure Cloud Shell.
+16. In many respects, the Azure CLI is almost identical to Azure PowerShell in what you can do with it. Both run on Windows, Linux, and Mac, and can be accessed in a web browser via Cloud Shell.
+17. ARM Templates can even execute PowerShell and Bash scripts before or after the resource has been set up.
+18. The last management tool to discuss is the Azure mobile app, which you can access via an iOS or Android phone or tablet.
+19. Azure monitoring offerings: Azure Advisor, Azure Monitor, Azure Service Health.
+20. Azure Advisor: 
+					Azure Advisor evaluates your Azure resources and makes recommendations to help improve reliability, security, and performance, achieve operational excellence, and reduce costs.
+					The recommendations are available via the Azure portal and the API, and you can set up notifications to alert you to new recommendations.
+					Recommendation categories: Reliability, Security, Performance, Cost, Operational Excellence.	
+21. Azure Monitor: 
+					Azure Monitor is a platform for collecting, analyzing, visualizing, and potentially taking action based on the metric and logging data from your entire Azure and on-premises environment.
+					Azure Monitor when you want to measure custom events alongside other collected telemetry data.
+					Use Azure Monitor to set up alerts for key events that are related to your specific resources.
+					You can view high-level reports on the Azure Monitor Dashboard or create custom views by using Power BI and Kusto queries.
+					Additionally, you can use the data to help you react to critical events in real time, through alerts delivered to teams via SMS, email, and so on.
+22. Some popular products such as Azure Application Insights, a service for sending telemetry information from application source code to Azure, uses Azure Monitor under the hood.		
+23. Azure Resource Health: 
+							Azure Service Health provides a personalized view of the health of the Azure services, regions, and resources you rely on. You can view the current status of the Azure services you rely on, upcoming planned outages, and services that will be sunset.
+							The status.azure.com website, which displays only major issues that broadly affect Azure customers, doesn't provide the full picture.
+							But Azure Service Health displays both major and smaller, localized issues that affect you.
+							You can set up alerts that help you triage outages and planned maintenance.
+							After an outage, Service Health provides official incident reports, called root cause analyses (RCAs), which you can share with stakeholders.
+							Service Health helps you keep an eye on several event types: Service issues, Planned maintenance, Health advisories.								
+24. Use Azure Service Health to set up alerts that are specific to Azure outages that affect all Azure customers. Use Azure Monitor to set up alerts for outages and other events that affect only your specific resources.
+
+
+
+
+
+
+
 											Part 4 - Describe general security and network security features
 
 1. Azure Security Center - is a monitoring service that provides visibility of your security posture across all of your services, both on 	   Azure and on-premises.	
@@ -370,6 +419,11 @@ Azure Storage Services:
 16. You can setup agents on your on-premises machines to send monitoring data to Azure Monitor.
 17. Azure policy initiative: It is a collection of policy definitions.
 18. Azure Advisor identifies unused or underutilized resources and recommends unused resources that you can remove. This information helps you configure your resources to match your actual workload.
+19. Azure Monitor collects data as soon as you add a resource to a ew Azure Subscription.
+20. All Azure resources does not support tags.
+21. Web apps must be registered with Azure AD to support authentication and authorization services.
+22. Azure Government is only available in U.S.
+
 
 
 
@@ -411,7 +465,9 @@ Azure Monitor,
 Azure Policy,
 Azure Pricing Calculator,
 Azure SQL storage backup storage tiers,
-
+Spot Pricing,
+Azure Blueprints,
+Azure Hybrid Benefit.
 									  					AZ-204 Labs
 
 1) https://microsoftlearning.github.io/AZ-204-DevelopingSolutionsforMicrosoftAzure/
