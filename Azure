@@ -207,9 +207,9 @@ Azure Storage Services:
 3. Azure Virtual Desktop provides centralized security management for users' desktops with Azure Active Directory.
 4. Point-to-site: Outside computer to corporate network.
 5. Site-to-site: On-premises VPN gateway to Azure VPN gateway.
-6. Azure ExpressRoute For environments where you need greater bandwidth and even higher levels of security, Azure ExpressRoute is the best 	   approach. ExpressRoute provides dedicated private connectivity to Azure that doesn't travel over the internet.
+6. Azure ExpressRoute: For environments where you need greater bandwidth and even higher levels of security, Azure ExpressRoute is the best 	   approach. ExpressRoute provides dedicated private connectivity to Azure that doesn't travel over the internet.
 7. VPN gateway: Policy-based, Route-based.
-8. Blobs store up to 8 TB of data for virtual machines.
+8. Blobs store up to 8TB of data for virtual machines.
 9. Blob access tiers: Hot(for data that is accessed frequently), Cool(for data that is infrequently accessed and stored for at least 30days), Archive(for data that is rarely accessed and stored for at least 180days. Ex: long term backups).
 	Only the hot and cool access tiers can be set at the account level. The archive access tier isn't available at the account level.
 	Archive storage stores data offline and offers the lowest storage costs, but also the highest costs to rehydrate and access data.
@@ -232,7 +232,7 @@ Azure Storage Services:
 2. Azure IoT Central builds on top of IoT Hub by adding a dashboard that allows you to connect, monitor, and manage your IoT devices. 
 3. Azure Sphere creates an end-to-end, highly secure IoT solution for customers that encompasses everything from the hardware and operating system on the device to the secure method of sending messages from the device to the message hub.
 4. When security is a critical consideration in your product's design, the best product option is Azure Sphere, which provides a comprehensive end-to-end solution for IoT devices.
-5. Send telemetry information to a centralized location - Azure IoT Hub, Remote control, set up error notifications - Azure IoT Central.
+5. Send telemetry information to a centralized location - Azure IoT Hub. Remote control, set up error notifications - Azure IoT Central.
 6. Azure Machine Learning is a platform for making predictions. It consists of tools and services that allow you to connect to data to train and test models to find one that will most accurately predict a future result.
 7. Azure Cognitive Services provides prebuilt machine learning models that enable applications to see, hear, speak, understand, and even begin to reason.
 8. Azure Bot Service and Bot Framework are platforms for creating virtual agents that understand and reply to questions just like a human.
@@ -268,10 +268,6 @@ Azure Storage Services:
 							After an outage, Service Health provides official incident reports, called root cause analyses (RCAs), which you can share with stakeholders.
 							Service Health helps you keep an eye on several event types: Service issues, Planned maintenance, Health advisories.								
 24. Use Azure Service Health to set up alerts that are specific to Azure outages that affect all Azure customers. Use Azure Monitor to set up alerts for outages and other events that affect only your specific resources.
-
-
-
-
 
 
 
@@ -324,7 +320,7 @@ Azure Storage Services:
 
 1. Azure AD Connect synchronizes user identities between on-premises Active Directory and Azure AD.
 2. To use Conditional Access, you need an Azure AD Premium P1 or P2 license.
-3. Conditional Access enables you to require users to access your applications only from approved, or managed, devices.
+3. Conditional Access enables you to require users to access your applications only from approved, or managed devices.
 4. Azure RBAC doesn't enforce access permissions at the application or data level. Application security must be handled by your application.
 5. A resource lock prevents resources from being accidentally deleted or changed.
    You can apply locks to a subscription, a resource group, or an individual resource. You can set the lock level to CanNotDelete or ReadOnly.
@@ -399,10 +395,8 @@ Azure Storage Services:
 
 1. To monitor threats by using sensors, you would use Azure Advanced Threat Protection (ATP).
 2. The just-in-time (JIT) virtual machine (VM) access feature in Azure Security Center allows you to lock down inbound traffic to your 		   Azure Virtual Machines.
-
-
 3. Linux - Azure CLI tools
-   ChormeOs - Azure Cloud Tools
+   ChormeOs - Azure Cloud *Tools
    macOS - Powershell Core
 4. Tags are not inherited by resources from resource group.
 5. All Windows, Linux, macOS can use Azure CLI, PowerShell, Portal.
@@ -419,17 +413,19 @@ Azure Storage Services:
 16. You can setup agents on your on-premises machines to send monitoring data to Azure Monitor.
 17. Azure policy initiative: It is a collection of policy definitions.
 18. Azure Advisor identifies unused or underutilized resources and recommends unused resources that you can remove. This information helps you configure your resources to match your actual workload.
-19. Azure Monitor collects data as soon as you add a resource to a ew Azure Subscription.
+19. Azure Monitor collects data as soon as you add a resource to a new Azure Subscription.
 20. All Azure resources does not support tags.
 21. Web apps must be registered with Azure AD to support authentication and authorization services.
 22. Azure Government is only available in U.S.
-
-
-
-
-   														Know about
-
-
+23. Create budget alerts: When a resource exceeds the available limit.
+24. Microsoft Trust Center is the Azure information site that contains broad-ranging security information.
+25. Both Bash and PowerShell supports Azure CLI and Azure PowerShell module.
+26. Bash defaults to Azure CLI, but you can switch to PowerShell within Linux by typing 'pwsh'. The PowerShell env has both CLI tools pre-installed.
+27. You can use Azure Mobile app to manage RBAC, and can also run Cloud Shell.
+28. In SaaS, customers just 'Configure features'.
+Part2:
+1. VPN Gatewat - Sends encrypted traffic between an Azure VNET and an on-premises location over the internet.
+2. VPN peering - Enables seamless connection of two or more Virtual Networks.
 
 
 
@@ -468,6 +464,70 @@ Azure SQL storage backup storage tiers,
 Spot Pricing,
 Azure Blueprints,
 Azure Hybrid Benefit.
+
+
+
+Azure Advisor: 
+				Free, personalized guide to Azure best practices.
+				Azure Advisor analyzes your configurations and usage telemetry and offers personalized, actionable recommendations to help you optimize your Azure resources for reliability, security, operational excellence, performance, and cost.
+				Access Advisor through the Azure portal, the Azure Command Line Interface (CLI), or the Advisor API.
+				Advisor Quick Fix makes optimization at scale faster and easier by allowing users to remediate recommendations for multiple resources simultaneously and with only a few clicks.
+				Recommendations are prioritized according to our best estimate of significance to your environment, and you can share them with your team or stakeholders.
+				Advisor Score enables you to get the most out of your Azure investment using a centralized dashboard to monitor, work on, and track your progress toward optimizing the cost, security, reliability, operational excellence, and performance of your Azure resources.
+				Helps optimize and reduce your overall Azure spend by identifying idle and underutilized resources.
+				Integrates with Azure Security Center to identify potential vulnerabilities that can lead to security breaches.
+				Advisor operates at the subscription and resource level, either in aggregate or individually.
+				You can access Advisor recommendations as Owner, Contributor, or Reader of a subscription or resource.
+				Create Azure Service Health alerts to notify you when Azure problems affect you.
+				Design your storage accounts to prevent reaching the maximum subscription limit.
+
+Azure Servie Health:
+					Azure Service Health notifies you about Azure service incidents and planned maintenance so you can take action to mitigate downtime.
+					Personalized dashboard shows the service issues that affect you.
+					Configurable cloud alerts notify you about active and upcoming service issues.
+					Shareable details and updates, including incident root cause analyses.
+					Review active incidents, planned maintenance and health advisories in a personalized dashboard for service health based on your Azure subscriptions, services and regions.
+					Get alerts about active incidents and upcoming maintenance.
+					Service Health is available to Azure subscribers at no additional cost.
+				
+
+Azure Application Insights:
+							Application Insights, a feature of Azure Monitor, is an extensible Application Performance Management (APM) service for developers and DevOps professionals. 
+							Use it to monitor your live applications.
+							It will automatically detect performance anomalies, and includes powerful analytics tools to help you diagnose issues and to understand what users actually do with your app. It's designed to help you continuously improve performance and usability.
+							It can monitor and analyze telemetry from mobile apps by integrating with Visual Studio App Center.
+
+Azure Monitor:
+				Azure Monitor helps you maximize the availability and performance of your applications and services.
+				It delivers a comprehensive solution for collecting, analyzing, and acting on telemetry from your cloud and on-premises environments.
+				All data collected by Azure Monitor fits into one of two fundamental types, metrics and logs.
+
+Azure AD:
+			Azure Active Directory (Azure AD) is Microsoft’s cloud-based identity and access management service, which helps your employees sign in and access resources external and internal.
+			Azure AD licences: Free, P1, P2, Pay-as-you-go.
+					Free: Provides user and group management, on-premises directory synchronization, basic reports, self-service password 		  change for cloud users, and single sign-on across Azure, Microsoft 365, and many popular SaaS apps.
+					P1: P1 also lets your hybrid users access both on-premises and cloud resources. It also supports advanced administration, such as dynamic groups, self-service group management, Microsoft Identity Manager (an on-premises identity and access management suite) and cloud write-back capabilities, which allow self-service password reset for your on-premises users.
+					P2: P2 also offers Azure Active Directory Identity Protection to help provide risk-based Conditional Access to your apps and critical company data and Privileged Identity Management to help discover, restrict, and monitor administrators and their access to resources and to provide just-in-time access when needed.
+
+					Terminology:
+								Account Administrator: This classic subscription administrator role is conceptually the billing owner of a subscription. This role enables you to manage all subscriptions in an account. 
+								Owner: This role helps you manage all Azure resources, including access. This role is built on a newer authorization system called Azure role-based access control (Azure RBAC) that provides fine-grained access management to Azure resources.
+								Azure AD Global administrator: This administrator role is automatically assigned to whomever created the Azure AD tenant.
+								Azure tenant: A dedicated and trusted instance of Azure AD that's automatically created when your organization signs up for a Microsoft cloud service subscription, such as Microsoft Azure, Microsoft Intune, or Microsoft 365. An Azure tenant represents a single organization.
+								Single tenant: Azure tenants that access other services in a dedicated environment are considered single tenant.
+								Multi tenant: Azure tenants that access other services in a shared environment, across multiple organizations, are considered multi-tenant.
+								Azure AD Director: Each Azure tenant has a dedicated and trusted Azure AD directory. The Azure AD directory includes the tenant's users, groups, and apps and is used to perform identity and access management functions for tenant resources.
+
+Conditional Access: 
+					Conditional Access is the tool used by Azure Active Directory to bring signals together, to make decisions, and enforce organizational policies.
+					Conditional Access policies are enforced after first-factor authentication is completed.
+
+Azure Support Plans: Basic - No 3rd party software support, no 24/7 technical support, Developer, Standard, Professional Direct.													
+
+Cloud Adoption Framework: 
+
+
+
 									  					AZ-204 Labs
 
 1) https://microsoftlearning.github.io/AZ-204-DevelopingSolutionsforMicrosoftAzure/
